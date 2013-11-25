@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nike+ FuelBand SE - Nike</title>
+<!--if this isnt set, many mobile browsers will use a virtual page widfth of around 900 pixels.-->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/themes/nikeBETA.css" />
+<script src="js/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href="images/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+<!--start of page--> 
+<!--each view or page is id'd with an element, usually a div with a data role attribute-->
+<div data-role="page" id="home">
+  <div data-role="header" data-theme="a">
+    <h1>Nike Store</h1>
+    <a href="#home" data-icon="home">Home</a> <a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop">Sign in</a> </div>
+  <div data-role="popup" id="popupLogin" data-theme="c" class="ui-corner-all">
+    <form>
+      <div style="padding:10px 20px;">
+        <h3 class="h3Padding">Please sign in</h3>
+        <label for="un" class="ui-hidden-accessible">Username:</label>
+        <input type="text" name="user" id="un" value="" placeholder="username" data-theme="c">
+        <label for="pw" class="ui-hidden-accessible">Password:</label>
+        <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="c">
+        <button type="submit" data-theme="a" data-icon="check">Sign in</button>
+        <br>
+        <p class="h3Padding"><a href="#">Forgot Password</a> - <a href="#">Not a member?</a></p>
+      </div>
+    </form>
+  </div>
+  <div data-role="header" data-theme="c">
+    <h1>Nike+ FuelBand SE</h1>
+    <a data-role="button" href="#home" data-icon="home">Nike Store</a> <a data-role="button" href="#" data-icon="home">Devices</a> </div>
+  <br>
+  <div class="centre">
+    <h4>The smart, simple, and fun way to get more active.</h4>
+    <br>
+    <video width="620" height="340" controls poster="images/vidpreview.jpg">
+      <source src="FuelBand.mp4" type="video/mp4">
+      <source src="FuelBand.ogg" type="video/ogg">
+      Your browser does not support the video tag. </video>
+  </div>
+  <br>
+  <h2 class="bodyWidth">The device that tracks your active life with NikeFuel - A universal way to measure movement for all kinds of activities.</h2>
+  <br>
+  <img class="fitImg" src="images/img6.jpg">
+  <div id="box1">
+    <div class="boxContainer">
+      <h4>Revolutionary NikeFuel</h4>
+      <p>NikeFuel is a single, universal way to measure all kinds of activities—from your morning workout to your big night out. Uniquely designed to measure whole-body movement no matter your age, weight or gender, NikeFuel tracks your active life.</p>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#features" data-icon="info">Features</a></li>
+        <li><a href="#cartInfo" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="plus" data-transition="pop">Add To Cart</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div data-role="popup" id="cartInfo" data-theme="c" class="ui-corner-all">
+    <form>
+      <div style="padding:10px 20px;">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>
+        <h3>Size:</h3>
+        </legend>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a">
+        <label for="radio-choice-h-2a">Small</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b">
+        <label for="radio-choice-h-2b">Medium</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2c">
+        <label for="radio-choice-h-2c">Large</label>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>
+        <h3>Color:</h3>
+        </legend>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3a">
+        <label for="radio-choice-h-3a">Volt</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3b">
+        <label for="radio-choice-h-3b">Total Crimson</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3c">
+        <label for="radio-choice-h-3c">Pink Foil</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3d">
+        <label for="radio-choice-h-3d">Black</label>
+      </fieldset>
+    </form>
+    <form>
+      <label for="slider-1">
+      <h3>Quantity:</h3>
+      </label>
+      <input type="range" name="slider-1" id="slider-1" min="1" max="5" value="1">
+    </form>
+    <br>
+    <form>
+      <button>Add To Cart</button>
+    </form>
+  </div>
+</div>
+</div>
+<div data-role="page" id="features">
+  <div data-role="header" data-theme="a">
+    <h1>Nike Store</h1>
+    <a href="#home" data-icon="home">Home</a> <a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop">Sign in</a> </div>
+  <div data-role="popup" id="popupLogin" data-theme="c" class="ui-corner-all">
+    <form>
+      <div style="padding:10px 20px;">
+        <h3 class="h3Padding">Please sign in</h3>
+        <label for="un" class="ui-hidden-accessible">Username:</label>
+        <input type="text" name="user" id="un" value="" placeholder="username" data-theme="c">
+        <label for="pw" class="ui-hidden-accessible">Password:</label>
+        <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="c">
+        <button type="submit" data-theme="a" data-icon="check">Sign in</button>
+        <br>
+        <p class="h3Padding"><a href="#">Forgot Password</a> - <a href="#">Not a member?</a></p>
+      </div>
+    </form>
+  </div>
+  <div data-role="header" data-theme="c">
+    <h1>Nike+ FuelBand SE</h1>
+    <a data-role="button" href="#home" data-icon="home">Nike Store</a> <a data-role="button" href="#" data-icon="home">Devices</a> </div>
+  <div data-role="content">
+    <div id="fuelbandse" class="ui-grid-a">
+      <div class="ui-block-a"> <img id="mainThumb" src="images/img1.jpg" alt="FuelBand SE"> <a href="#popupImg2" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/img2r.jpg" style="width:48%" alt="FuelBand SE"></a>
+        <div data-role="popup" id="popupImg2" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,60" > <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="images/img2r.jpg" alt="FuelBand SE"> </div>
+        <a href="#popupImg3" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/img3v.jpg" style="width:48%" alt="FuelBand SE"></a>
+        <div data-role="popup" id="popupImg3" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,60" > <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="images/img3v.jpg" alt="FuelBand SE"> </div>
+        <a href="#popupImg4" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/img4.jpg" style="width:48%" alt="FuelBand SE"></a>
+        <div data-role="popup" id="popupImg4" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,60" > <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="images/img4.jpg" alt="FuelBand SE"> </div>
+        <a href="#popupImg5" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/img5.jpg" style="width:48%" alt="FuelBand SE"></a>
+        <div data-role="popup" id="popupImg5" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,60" > <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="images/img5.jpg" alt="FuelBand SE"> </div>
+      </div>
+      <div class="ui-block-b">
+        <h3>Nike+ FuelBand SE</h3>
+        <p>The new Nike+ FuelBand SE is the smart, simple and fun way to get more active.</p>
+        <h4>Features</h4>
+        <ul>
+          <li>Earns NikeFuel, a universal way to measure movement for all kinds of activities</li>
+          <li>Tracks the intensity of your workouts and enables sleep tracking with Nike+ Sessions</li>
+          <li>Counts steps and tells time</li>
+          <li>Displays your progress in real time</li>
+          <li>Keeps you and your friends motivated through Nike+ Groups</li>
+        </ul>
+        <br>
+        <h4>Warranty Information</h4>
+        <br>
+        <p>The Nike+ FuelBand SE comes with a one-year limited warranty. <a href="#">See details</a>.</p>
+        <br>
+        <h4>Still Have Questions?</h4>
+        <br>
+        <p>For answers to frequently asked questions, see the <a href="#">FAQ page</a>.</p>
+      </div>
+    </div>
+    <div class="ui-grid-solo">
+      <div data-role="collapsible">
+        <h4>Tech Specs</h4>
+        <div data-role="collapsible-set" data-theme="c">
+          <div data-role="collapsible">
+            <h3>Sizes</h3>
+            <p><strong>Small:</strong> 5.79 in (147 mm) circumference</p>
+            <p><strong>Medium/Large:</strong> 6.77 in (172 mm) circumference</p>
+            <p><strong>X-Large:</strong> 7.76 in (197 mm) circumference</p>
+            <p><strong>Depth:</strong> 0.6 in (16 mm) at LEDs, 0.75 in (19 mm) at latch Thickness: 0.27 in (6.90 mm) at LEDs, 0.32 in (8.00 mm) at latch </p>
+          </div>
+          <div data-role="collapsible">
+            <h3>Weight</h3>
+            <p><strong>Small:</strong> 0.95 oz (27 g) </p>
+            <p><strong>Medium/Large:</strong> 1.06 oz (30 g) </p>
+            <p><strong>X-Large:</strong> 1.13 oz (32 g) </p>
+            <p><strong>8 mm link:</strong> 0.07 oz (2 g) </p>
+            <p><strong>16 mm link:</strong> 0.11 oz (3 g)</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>Display</h3>
+            <p><strong>20 Color LED lights</strong> show your Daily Goal progress from red to green.</p>
+            <p><strong>Array of 100 white LED lights</strong> shows time, NikeFuel earned, calories burned, and steps taken. You can cycle through all this with the push of a button.</p>
+            <p>The brightness level automatically adjusts according to your environment. </p>
+          </div>
+          <div data-role="collapsible">
+            <h3>Battery</h3>
+            <p>Two Lithium Polymer Batteries. Your Nike+ FuelBand should stay charged for up to four days.</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>Water Resistance</h3>
+            <p>The Nike+ FuelBand is water resistant. It is safe to wear in the shower or when dancing in the rain. Since it's not waterproof, it's not recommended for use while swimming.</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>Sensors</h3>
+            <p>A built-in 3 axis accelerometer measures your motion all day long. An ambient light sensor detects environmental light levels. The brighter your environment, the brighter your display.</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>In The Box</h3>
+            <ul>
+              <li>Nike+ FuelBand</li>
+              <li>8mm and 16mm links (8mm link is already inserted into your Nike+ FuelBand)</li>
+              <li>Sizing tool</li>
+              <li>USB charging cable</li>
+            </ul>
+          </div>
+          <div data-role="collapsible">
+            <h3>Connect & Sync</h3>
+            <p>Connect to your computer with the built-in USB 2.0 or use the included USB cable. Bluetooth 4.0 pairing to smart phones (for use with the Nike+ FuelBand app for iOS 6.1 and above, iPhone 4S and above, and iPod Touch 5th generation and above) </p>
+          </div>
+        </div>
+      </div>
+      <h2>Featured Technology</h2>
+      <h4>Nike+</h4>
+      <p>Nike+ is an ecosystem of digital products and experiences designed to measure, motivate and empower you to improve. By tracking your progress and allowing you to share your sports data, Nike+ offers you ways to measure up, compare, compete and excel. <a href="#">Learn more</a>.</p>
+      <div class="centreImg"> <img src="images/nikepluslogo.png"> </div>
+      <br>
+      <div data-role="collapsible">
+        <h4>Reviews</h4>
+        <div class="centreImg"> <br>
+          <img src="images/5stars.png">
+          <h3 class="noPadding">2 Reviews</h3>
+          <a href="#popupReview" 
+        
+        data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="plus" data-transition="pop" data-iconpos="left" data-mini="true">Add Your Review</a> </div>
+        <h4>MOTIVATION</h4>
+        <p>By: <strong>Bode Miller - Michigan, USA</strong></p>
+        <p>I love my fuelband it gives me motivation so I won't stop until I reach my goal.</p>
+        <h5>Rating: <img class="paddingpls" src="images/5stars.png"></h5>
+        <br>
+        <hr>
+        <h4>Great motivational tool and conversation starter</h4>
+        <p>By: <strong>Alex Oakley - Florida, USA</strong></p>
+        <p>My fuel band was a gift and I love it. I have since bought the new generation one for my son and we are connected as friends. This is a great and motivational tool as my son now has to keep up or answer to me.</p>
+        <h5>Rating: <img class="paddingpls" src="images/5stars.png"></h5>
+      </div>
+    </div>
+    <div data-role="popup" id="popupReview" data-theme="c" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>
+          <h3 class="noPadding">Title:</h3>
+          </legend>
+          <input type="text" name="title-1" id="title-1" value="">
+        </fieldset>
+      </form>
+      <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>
+          <h3 class="noPadding">Review:</h3>
+          </legend>
+          <textarea cols="40" rows="8" name="textarea-1" id="textarea-1"></textarea>
+        </fieldset>
+      </form>
+      <form>
+        <label for="slider-1">
+        <h3 class="noPadding">Stars:</h3>
+        </label>
+        <input type="range" name="slider-1" id="slider-1" min="1" max="5" value="1">
+      </form>
+      <br>
+      <form>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#home" data-icon="back">Mini-Site</a></li>
+        <li><a href="#cartInfo" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="plus" data-transition="pop">Add To Cart</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div data-role="popup" id="cartInfo" data-theme="c" class="ui-corner-all">
+    <form>
+      <div style="padding:10px 20px;">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>
+        <h3>Size:</h3>
+        </legend>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a">
+        <label for="radio-choice-h-2a">Small</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b">
+        <label for="radio-choice-h-2b">Medium</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2c">
+        <label for="radio-choice-h-2c">Large</label>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>
+        <h3>Color:</h3>
+        </legend>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3a">
+        <label for="radio-choice-h-3a">Volt</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3b">
+        <label for="radio-choice-h-3b">Total Crimson</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3c">
+        <label for="radio-choice-h-3c">Pink Foil</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-3d">
+        <label for="radio-choice-h-3d">Black</label>
+      </fieldset>
+    </form>
+    <form>
+      <label for="slider-1">
+      <h3>Quantity:</h3>
+      </label>
+      <input type="range" name="slider-1" id="slider-1" min="1" max="5" value="1">
+    </form>
+    <br>
+    <form>
+      <button>Add To Cart</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
